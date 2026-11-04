@@ -83,7 +83,7 @@ Download or clone the project.
 
 Open the project folder in Visual Studio Code.
 
-Open homepage.html using Live Server or a web browser.
+Open index.html using Live Server or a web browser.
 
 Navigate to the Browse Items page to view reported items.
 
@@ -117,14 +117,6 @@ Project Status
 
 Frontend development version – In progress.
 
-Author
-
-Ahmed Abdulrauf
-
-License
-
-This project is developed for educational and academic purposes.
-
 CampusFind/
 │
 ├── index.html
@@ -142,46 +134,5 @@ CampusFind/
 │   ├── browse.html
 │   └── browse.css
 └──└── browse.js
- 
-
-
-Note: Adjust the folder structure above if your actual project contains different files or folders.
-
-How to Use
-
-1. Download or clone the project.
-2. Open the project folder in Visual Studio Code.
-3. Open "homepage.html" using Live Server or a web browser.
-4. Navigate to the Browse Items page to view reported items.
-5. Use the Report Item page to submit a lost or found item.
-6. Upload an item picture and provide the necessary details.
-7. Browse the submitted items and contact the reporter through the available contact information.
-
-Data Storage
-
-CampusFind currently uses the browser's Local Storage to save submitted reports.
-
-This means:
-
-- Reports remain available in the same browser and website origin.
-- Data is not automatically shared between different devices or browsers.
-- Clearing browser storage can delete saved reports.
-- The current version does not use a server-side database.
-
-Project Scope
-
-This version focuses on frontend development and demonstrates the basic operations of a campus Lost and Found platform.
-
-Backend integration, database management, user authentication, and administrative management can be implemented in future versions.
-
-Project Status
-
-Frontend development version – In progress.
-
-Author
-
-Ahmed Abdulrauf
-
-License
 
 This project is developed for educational and academic purposes.
