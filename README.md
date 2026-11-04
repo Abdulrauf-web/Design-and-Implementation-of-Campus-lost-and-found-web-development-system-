@@ -117,22 +117,4 @@ Project Status
 
 Frontend development version – In progress.
 
-CampusFind/
-│
-├── index.html
-├── README.md
-├── stat.js
- ── style.css
-│   
-│
-├── report/
-│   ├── report.js
-│   ├── report.html
-│   └── report.css
-│
-├── browse/
-│   ├── browse.html
-│   └── browse.css
-└──└── browse.js
-
-This project is developed for educational and academic purposes.
+live link: (https://kogipolycampuslostandfound.netlify.app/)
