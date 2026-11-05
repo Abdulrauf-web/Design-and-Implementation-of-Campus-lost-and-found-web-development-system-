@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KSP Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="stat.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="KSP Logo.png" alt="logo">
+            <span>KogiPolyCampus <span class="blue">Find</span>
+            </span>
+        </a>
+        
+
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="/browse/browse.html">Browse</a>
+            <a href="/report/report.html" class="reportbutton">Report Item</a>
+        </nav>
+    </header>
+
+    <!-- Main homepage section -->
+    <main>
+        <section class="hero">
+
+            <!-- Left side: Text and search -->
+            <div class="hero-content">
+                <h1>Lost something?</h1>
+                <h2>We'll help you find it.</h2>
+
+                <p>
+                    Report lost items or browse found items on campus.
+                    It's simple, fast and free.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/browse/browse.html" class="lost-btn">I Lost Something</a>
+                    <a href="/report/report.html" class="found-btn">I Found Something</a>
+                </div>
+            </div>
+
+            <!-- Right side: Illustration -->
+            <div class="hero-image" aria-label="Lost belongings illustration">
+                <div class="item-circle">
+                    <img src="KSP Logo.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h3 id="totalItems">0</h3>
+        <p>Total Items</p>
+    </div>
+
+    <div class="stat">
+        <h3 id="lostItems">0</h3>
+        <p>Lost</p>
+    </div>
+
+    <div class="stat">
+        <h3 id="foundItems">0</h3>
+        <p>Found</p>
+    </div>
+
+</section>
+
+        <!-- Recent items preview -->
+        <section class="recent-items">
+            <div class="section-heading">
+                <h2>Recent Items</h2>
+                <a href="/browse/browse.html">View All →</a>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

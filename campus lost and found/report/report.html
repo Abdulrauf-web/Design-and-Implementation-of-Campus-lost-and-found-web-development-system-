@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Item | CampusFind</title>
+  <link rel="stylesheet" href="report.css">
+  <script src="report.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+        <a href="#" class="logo">
+            <img src="KSP Logo.png" alt="logo">
+            <span>KogiPolyCampus <span class="blue">Find</span>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="/home/homepage.html">Home</a>
+            <a href="/browse/browse.html">Browse</a>
+        </nav>
+    </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">LOST SOMETHING? FOUND SOMETHING?</p>
+      <h1>Report an Item</h1>
+      <p>Help reunite lost belongings with their owners
+        by providing the correct information below.</p>
+    </section>
+
+    <form id="reportForm">
+      <h2>Item Information</h2>
+      <p class="hint">Fields marked * are required.</p>
+
+      <label for="reportType">What are you reporting? *</label>
+      <select id="reportType" name="reportType" required>
+        <option value="">Choose report type</option>
+        <option value="Lost">I lost an item</option>
+        <option value="Found">I found an item</option>
+      </select>
+
+      <label for="itemName">Item name *</label>
+      <input type="text" id="itemName" name="itemName"
+        placeholder="e.g. Black backpack" required>
+
+      <label for="category">Category *</label>
+      <select id="category" name="category" required>
+        <option value="">Choose category</option>
+        <option>Electronics</option>
+        <option>Books and Notes</option>
+        <option>Clothing</option>
+        <option>Identity Cards</option>
+        <option>Keys</option>
+        <option>Bags</option>
+        <option>Other</option>
+      </select>
+
+      <label for="description">Description *</label>
+      <textarea id="description" name="description"
+        rows="4" placeholder="Describe the item and any identifying details..."
+        required></textarea>
+
+      <div class="two-columns">
+        <div>
+          <label for="location">Location *</label>
+          <input type="text" id="location" name="location"
+            placeholder="e.g. School library" required>
+        </div>
+
+        <div>
+          <label for="itemDate">Date lost or found *</label>
+          <input type="date" id="itemDate" name="itemDate" required>
+        </div>
+      </div>
+
+      <label for="itemImage">Item photo (optional)</label>
+      <input type="file" id="itemImage" name="itemImage"
+        accept="image/*">
+      <p class="hint">Choose a photo from your device.</p>
+
+      <hr>
+
+      <h2>Student Contact Information</h2>
+
+      <label for="studentName">Full name *</label>
+      <input type="text" id="studentName" name="studentName"
+        placeholder="Enter your full name" required>
+
+      <label for="studentEmail">Email address *</label>
+      <input type="email" id="studentEmail" name="studentEmail"
+        placeholder="you@example.com" required>
+
+      <label for="phone">Phone number (optional)</label>
+      <input type="tel" id="phone" name="phone"
+        placeholder="Enter your phone number">
+
+      <button type="submit" class="submit-btn">
+        Submit Report
+      </button>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CampusFind. Helping students find their belongings.</p>
+  </footer>
+
+</body>
+</html>

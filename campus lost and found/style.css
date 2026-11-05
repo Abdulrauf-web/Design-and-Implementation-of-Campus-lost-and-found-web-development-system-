@@ -1,0 +1,315 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #102544;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: white;
+    border-bottom: 1px solid #e5eaf1;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.logo-icon {
+    font-size: 28px;
+}
+
+.blue {
+    color: #0866ed;
+}
+
+.logo small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    color: #64748b;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #0866ed;
+}
+.reportbutton {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+    padding: 12px 18px;
+    background-color: #0866ed;
+    color: white;
+    border-radius: 30px;
+}
+
+.login{
+    background: #0866ed;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.report-button:hover {
+  background: var(--primary-dark);
+}
+
+/* 3. Homepage hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 65px 10%;
+    background: linear-gradient(135deg, #f4f8ff, #e7f0ff);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.hero h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    margin-bottom: 15px;
+}
+
+.hero-content > p {
+    color: #536783;
+    margin-bottom: 25px;
+}
+
+/* 4. Search form */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #d6dfec;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #0866ed;
+    color: white;
+    cursor: pointer;
+}
+
+/* 5. Lost and found buttons */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-buttons a {
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.lost-btn {
+    background: #102544;
+    color: white;
+}
+
+.found-btn {
+    background: white;
+    color: #0866ed;
+    border: 1px solid #0866ed;
+}
+
+/* 6. Simple illustration */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+
+.item-circle img{
+    width: 400px;
+    height: 400px;
+}
+
+.bag {
+    font-size: 100px;
+}
+
+.phone,
+.keys {
+    font-size: 35px;
+}
+
+/* 7. Statistics */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 8%;
+    border-bottom: 1px solid #e5eaf1;
+    text-align: center;
+}
+
+.stat + .stat {
+    border-left: 1px solid #e5eaf1;
+}
+
+.stat h3 {
+    font-size: 28px;
+}
+
+.stat p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* 8. Recent items */
+.recent-items {
+    padding: 30px 8%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 24px;
+}
+
+.section-heading a {
+    color: #0866ed;
+}
+
+.empty-message {
+    padding: 35px 15px;
+    text-align: center;
+    background: #f7f9fc;
+    color: #64748b;
+    border-radius: 10px;
+}
+
+/* 9. Responsive design for phones and tablets */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 6%;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .item-circle {
+        max-width: 100%;
+    }
+
+    .stats {
+        padding: 22px 4%;
+    }
+
+    .recent-items {
+        padding: 25px 5%;
+    }
+}
+
+/* 10. Extra-small phones */
+@media (max-width: 380px) {
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 7px;
+        font-size: 12px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+}

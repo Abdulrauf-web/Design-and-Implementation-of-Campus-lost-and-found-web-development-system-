@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Items | CampusFind</title>
+  <link rel="stylesheet" href="browse.css">
+  <script src="browse.js" defer></script>
+</head>
+<body>
+
+   <header class="navbar">
+        <a href="#" class="logo">
+            <img src="KSP Logo.png" alt="logo">
+            <span>KogiPolyCampus <span class="blue">Find</span>
+            </span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="/home/homepage.html">Home</a>
+            <a href="/browse/browse.html"class="active">Browse</a>
+        </nav>
+    </header>
+
+  <main class="container">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">CAMPUS LOST & FOUND</p>
+        <h1>Browse Items</h1>
+        <p class="subtitle">
+          Lost something? Found something? Help reunite
+          students with their belongings.
+        </p>
+      </div>
+
+      <a href="/report/report.html" class="report-button">
+        + Report an Item
+      </a>
+    </section>
+
+    <section class="search-panel">
+      <label for="searchInput" class="sr-only">
+        Search items
+      </label>
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search item name, description or location..."
+      >
+
+      <label for="categoryFilter" class="sr-only">
+        Filter by category
+      </label>
+
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Bags">Bags</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Books">Books</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label for="statusFilter" class="sr-only">
+        Filter by status
+      </label>
+
+      <select id="statusFilter">
+        <option value="All">Lost & Found</option>
+        <option value="Lost">Lost Items</option>
+        <option value="Found">Found Items</option>
+      </select>
+    </section>
+
+    <section class="results-heading">
+      <h2>Recently Reported Items</h2>
+      <p id="resultsCount" aria-live="polite"></p>
+    </section>
+
+    <section
+      id="itemsGrid"
+      class="items-grid"
+      aria-label="Lost and found items"
+    ></section>
+
+    <div id="emptyState" class="empty-state" hidden>
+      <div class="empty-icon">⌕</div>
+      <h3>No items found</h3>
+      <p>Try another search or change your filters.</p>
+      <button id="resetButton" class="secondary-button">
+        Clear Filters
+      </button>
+    </div>
+
+    <div class="load-more-area">
+      <button id="loadMoreButton" class="load-more-button">
+        Load More Items
+      </button>
+    </div>
+
+    <section class="bottom-cta">
+      <div>
+        <h2>Found something on campus?</h2>
+        <p>Help its owner get it back by reporting it.</p>
+      </div>
+      <a href="/report/report.html" class="report-button">
+        Report Found Item
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 CampusFind · Helping campus belongings find their way home.</p>
+  </footer>
+
+  <dialog id="itemDialog" class="item-dialog">
+    <button id="closeDialog" class="close-dialog"
+      aria-label="Close details">&times;</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+</body>
+</html>
