@@ -117,4 +117,4 @@ Project Status
 
 Frontend development version – In progress.
 
-live link: (https://kogipolycampuslostandfound.netlify.app/)
+live link: (https://kogipolytechniclostandfound.netlify.app)
